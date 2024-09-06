@@ -1,0 +1,41 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+.footer {
+  background: $footer;
+//   width: 100%;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100 !important;
+  position: absolute;
+  bottom:  -50% !important;
+  left: 0;
+  right: 0;
+  padding: 5rem 12rem;
+  >div{
+    width: 20%;
+    p{
+        @include paraphStyle;
+        line-height: 1.7rem;
+        color: $light-gray;
+        font-size: 16px;
+        font-weight: 600;
+    }
+  }
+  .opens{
+      >div{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    div{
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: $light-gray;
+        line-height: 1.7rem;
+
+    }}
+  }
+}

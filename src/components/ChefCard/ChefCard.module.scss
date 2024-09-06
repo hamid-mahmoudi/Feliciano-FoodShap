@@ -1,0 +1,108 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+@keyframes borderAnimation {
+  0% {
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 0 solid transparent;
+    border-bottom: 1px solid $orange-pink;
+  }
+  25% {
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 0 solid transparent;
+    border-bottom: 1px solid $orange-pink;
+  }
+  50% {
+    border-left: 1px solid $orange-pink;
+    border-right: 1px solid $orange-pink;
+    border-top: 0 solid transparent;
+    border-bottom: 1px solid $orange-pink;
+  }
+  75% {
+    border-left: 1px solid $orange-pink;
+    border-right: 1px solid $orange-pink;
+    border-top: 0 solid transparent;
+    border-bottom: 1px solid $orange-pink;
+  }
+  100% {
+    border-left: 1px solid $orange-pink;
+    border-right: 1px solid $orange-pink;
+    //   border-top: 2px solid $orange-pink;
+    border-bottom: 2px solid $orange-pink;
+  }
+}
+
+.chefCard {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 22%;
+  box-shadow: $general-box-shadow;
+  position: relative;
+  transition: $general-transition;
+//   @include reSet;
+  &:hover {
+    animation: borderAnimation 1s 1 forwards;
+    transition: $general-transition;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .imageContainer {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 20%,
+        rgb(255, 255, 255)
+      );
+      pointer-events: none;
+    }
+  }
+  > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 30px;
+    .titles {
+      font-size: 20px;
+      @include reSet;
+    }
+    .positions {
+      @include textStyle(16px, 300);
+      color: $light-gray;
+      margin-bottom: 1rem;
+    }
+    .icons {
+      font-size: 16px;
+      color: $orange-pink;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 4px;
+      @include reSet;
+      :nth-child(3) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid $orange-pink;
+  }
+}

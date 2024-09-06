@@ -1,0 +1,21 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.button{button{
+    padding:20px  
+    40px;
+    background-color: $orange-pink;
+    border: none;
+    color: $white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: $general-transition;
+    box-sizing: border-box;
+    border: 1px solid $orange-pink;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: darken($color: $white, $amount: 1);
+        color: $orange-pink;
+    }
+}}

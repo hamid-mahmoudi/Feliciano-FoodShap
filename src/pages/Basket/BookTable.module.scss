@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
+.menuTitle {
+  @include menuTitleStyle;
+}
+.container {
+  @include containerStyle;
+  height: 70rem;
+}
+.total {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 5rem 0;
+  > span {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: inset 0px 2px 5px #acaaaa,
+    inset 12px 12px 15px #f2f2f2;
+    color: $light-gray;
+    span{
+      color: $dark-gray;
+      margin-left: 10px;
+    }
+  }
+}

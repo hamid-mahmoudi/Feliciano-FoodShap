@@ -1,0 +1,106 @@
+{
+  "items": [
+    {
+      "id": "28e3",
+      "name": "Veggie Omelet",
+      "details": "bell peppers, onions, spinach, and cheese",
+      "price": "6.49",
+      "group_id": 1,
+      "image": "https://www.sst.training/blog/wp-content/uploads/2020/04/half-moon-browned-omelet.jpg"
+    },
+    {
+      "id": "28e4",
+      "name": "Cheese Omelet",
+      "details": "cheddar cheese, mozzarella, and more",
+      "price": "5.99",
+      "group_id": 1,
+      "image": "https://www.eatingwell.com/thmb/eK-GZYzl1_gux4ELCTO92R6OwAM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/3749953-667cf59be0fd4b5bb5bf57d6da1a0c40.jpg"
+    },
+    {
+      "id": "28e5",
+      "name": "Mushroom Omelet",
+      "details": "mushrooms, onions, and cheese",
+      "price": "6.29",
+      "group_id": 1,
+      "image": "https://sumofyum.com/wp-content/uploads/2022/01/Mushroom-Omelette-Sum-of-Yum-1595WMTN1200.jpg"
+    },
+    {
+      "id": "28e6",
+      "name": "French Toast",
+      "details": "golden-brown French toast served with syrup and powdered sugar",
+      "price": "5.49",
+      "group_id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSK_NwS123cScKXFGbNu9l9D55UwJNhmjYxw&s"
+    },
+    {
+      "id": "28e7",
+      "name": "Pancakes",
+      "details": "fluffy pancakes served with syrup and butter",
+      "price": "4.99",
+      "group_id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kZiJbXzlhO9cPHp7JlM0aIEr_oyeNeXzbA&s"
+    },
+    {
+      "id": "28e8",
+      "name": "Waffles",
+      "details": "crispy waffles served with syrup and whipped cream",
+      "price": "5.99",
+      "group_id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLn1eNROFGjJS5X9bWGcd18eNDRTC-2nvpmA&s"
+    },
+    {
+      "id": "58f8",
+      "name": "dsa",
+      "details": "das",
+      "price": "",
+      "group_id": 2,
+      "image": ""
+    }
+  ],
+  "groups": [
+    {
+      "name": "Breakfast",
+      "id": "1"
+    },
+    {
+      "name": "Lunch",
+      "id": "2"
+    },
+    {
+      "name": "Dinner",
+      "id": "3"
+    },
+    {
+      "name": "Drinks",
+      "id": "4"
+    },
+    {
+      "name": "Desserts",
+      "id": "5"
+    },
+    {
+      "name": "Wine",
+      "id": "6"
+    }
+  ],
+  "employees": [
+    {
+      "name": "John Smooth",
+      "position": "Restaurant Owner",
+      "id": "1",
+      "image": "/assets/images/chef-4.jpg"
+    },
+    {
+      "name": "Rebeca Welson",
+      "position": "Head Chef",
+      "id": "2",
+      "image": "/assets/images/chef-2.jpg"
+    },
+    {
+      "name": "Kharl Branyt",
+      "position": "Chef",
+      "id": "3",
+      "image": "/assets/images/chef-3.jpg"
+    }
+  ]
+}

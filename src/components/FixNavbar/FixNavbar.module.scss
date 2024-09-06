@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid $gray;
+  height: 50px;
+  padding: 0.8% 4%;
+  color: $white;
+  h2 {
+    font-weight: 900;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .bookTable {
+      border-radius: 7px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      a {
+        color: white !important;
+      }
+    }
+    li {
+      padding: 15px;
+      list-style: none;
+      &:last-child {
+        background-color: $orange-pink;
+      }
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}

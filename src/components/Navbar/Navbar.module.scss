@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-100px);
+  z-index: 100;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: $general-box-shadow;
+  height: 50px;
+  transition: $general-transition;
+  animation: getNavBack 0.2s forwards;
+  padding: 0 4%;
+
+  h2 {
+    font-weight: 900;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .bookTable {
+      a {
+        color: white !important;
+      }
+    }
+    li {
+      padding: 15px;
+      list-style: none;
+      &:last-child {
+        background-color: $orange-pink;
+      }
+    }
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+@keyframes getNavBack {
+  0% {
+    transform: translateY(-100px);
+}
+  100% {
+    transform: translateY(0px);
+    
+}
+}

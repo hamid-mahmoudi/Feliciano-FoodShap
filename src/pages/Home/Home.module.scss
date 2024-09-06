@@ -1,0 +1,86 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+.menuTitle {
+    @include menuTitleStyle;
+    
+  }
+.container {
+  @include containerStyle;
+  .presentRestaurant {
+    display: flex;
+    height: 100%;
+    .frame {
+      display: flex;
+      gap: 18px;
+      :nth-child(2) {
+        background-image: url(../../../public/assets/images/about-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 520px;
+        transform: translatey(15px);
+      }
+      :nth-child(1) {
+        background-image: url(../../../public/assets/images/about.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 520px;
+        transform: translatey(-15px);
+      }
+    }
+    .descriptions {
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5% 3%;
+      h2 {
+        color: $general-title;
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+      .paraf {
+        @include paraphStyle;
+      }
+      .times {
+        color: $text;
+        display: flex;
+        width: 100%;
+        justify-content: left;
+        gap: 5px;
+        font-size: 1.2rem;
+        * {
+          padding: 0;
+          margin: 0;
+        }
+        span {
+          font-weight: 800;
+        }
+      }
+      .number {
+        width: 100%;
+        text-align: left;
+        color: $orange-pink;
+        @include textStyle(2.8rem, 700);
+        padding: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+  .chefCards {
+    width: 100%;
+    padding: 5rem 0;
+    h3 {
+      @include setTitle;
+    }
+    .cardsContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

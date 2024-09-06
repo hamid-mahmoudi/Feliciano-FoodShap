@@ -1,0 +1,35 @@
+@import "../../styles/variables.scss";
+.section {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section1 {
+  position: fixed;
+  height: 100vh;
+  background-color: #f0f0f0;
+  top: 0;
+  z-index: -1;
+  background-image: url(../../../public/assets/images/section-back.jpg);
+  background-position: 0 -30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pagination{
+    position: absolute;
+    top: 48vh;
+    left: 50%;
+    transform: translatex(-50%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    text-wrap: nowrap;
+    span{
+        margin-left: 3px;
+      }
+      a{
+        color: $white;text-decoration: none;
+    }
+}

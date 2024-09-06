@@ -1,0 +1,9 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.inputContainer {
+  input {
+    @include inputStyle;
+    border-radius: 3px;
+  }
+}

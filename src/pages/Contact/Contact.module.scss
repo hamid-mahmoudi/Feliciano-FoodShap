@@ -1,0 +1,66 @@
+@import "../../../src/styles/variables.scss";
+@import "../../../src/styles/mixin.scss";
+.menuTitle {
+  @include menuTitleStyle;
+}
+.container {
+  height: 130vh !important;
+  @include containerStyle;
+  display: flex;
+  flex-direction: column;
+  .form {
+    display: flex;
+  }
+  .session {
+    h3 {
+      @include setTitle;
+      font-size: 24px;
+      text-align: left;
+      margin-top: 0;
+    }
+    width: 50%;
+    padding: 0 50px;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    textarea {
+      @include inputStyle;
+      width: 90%;
+      font-family: sans;
+      height: 70px;
+      border-radius: 3px;
+    }
+  }
+  .contactInfos {
+    padding: 8rem 0;
+    h3 {
+      @include setTitle;
+      font-size: 24px;
+      text-align: left;
+      margin-top: 0;
+      font-weight: 650;
+    }
+    display: flex;
+    flex-direction: column;
+    .row {
+      display: flex;
+      align-items: safe;
+      justify-content: space-between;
+      div {
+        width: 22%;
+        display: flex;
+        gap: 3px;
+        font-size: 1.1rem;
+        .pointer {
+          font-weight: 700;
+          color: $orange-pink;
+        }
+        p {
+          @include reSet;
+        }
+      }
+    }
+  }
+}

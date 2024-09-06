@@ -1,0 +1,77 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+.container {
+    @include reSet;
+  width: 100%;
+  border: 1px solid $gray;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: $general-box-shadow;
+  overflow: hidden;
+  transition: $general-transition;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 5px $light-gray;
+  }
+  * {
+    @include reSet;
+  }
+  .image {
+    overflow: hidden;
+    width: 140px !important;
+    height: 140px !important;
+    img {
+      width: 150px !important;
+      height: 150px !important;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  .body {
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    
+    span {
+      font-size: 1.6rem;
+      color: $orange-pink;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 5%;
+      text-wrap: nowrap;
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      > p {
+        padding-top: 3%;
+        color: $dark-gray;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p {
+          color: $dark-gray;
+          font-weight: 250;
+        }
+      }
+    }
+  }
+}
+.icon{
+    font-size: 2rem !important;
+    transition: $general-transition;
+    &:hover{
+        color: $dark-gray !important;
+    }
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
