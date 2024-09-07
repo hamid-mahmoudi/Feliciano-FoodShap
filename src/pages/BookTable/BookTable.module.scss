@@ -9,20 +9,20 @@
 }
 .total {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   font-size: 1.5rem;
   margin: 5rem 0;
   > span {
     padding: 1rem 2rem;
     border-radius: 8px;
-    background: #ffffff;
-    box-shadow: inset 0px 2px 5px #acaaaa,
-    inset 12px 12px 15px #f2f2f2;
-    color: $light-gray;
-    span{
-      color: $dark-gray;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    span {
+      color: #333333;
       margin-left: 10px;
     }
   }
 }
+

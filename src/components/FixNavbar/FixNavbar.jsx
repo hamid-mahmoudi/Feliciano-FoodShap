@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./FixNavbar.module.scss";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({cartItems}) => {
   const links = [
     { path: "/home", name: "Home" },
     { path: "/about", name: "About" },
@@ -10,6 +10,8 @@ const Navbar = () => {
     { path: "/stories", name: "Stories" },
     { path: "/contact", name: "Contact" },
   ];
+  const cartItemCount = cartItems.length;
+
   return (
     <div className={styles.navbar}>
       <div>
@@ -28,7 +30,12 @@ const Navbar = () => {
           </li>
         ))}
         <li className={styles.bookTable}>
-          <NavLink to="/basket">Order Basket</NavLink>
+          <NavLink to="/basket">
+            Order Basket
+            {cartItemCount > 0 && (
+              <span className={styles.badge}>{cartItemCount}</span>
+            )}
+          </NavLink>
         </li>
       </ul>
     </div>

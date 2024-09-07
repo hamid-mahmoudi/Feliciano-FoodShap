@@ -3,7 +3,7 @@ import styles from "./ItemCard.module.scss";
 import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import { BiCartDownload } from "react-icons/bi";
 import { AiTwotoneEdit, AiOutlineDelete } from "react-icons/ai";
-import { MdOutlineBookmarkAdded } from "react-icons/md";
+import { MdBookmarkAdded } from "react-icons/md";
 
 const ItemCard = ({ index, contentItem, onEdit, onDelete, onAddToCart, onRemoveFromCart, cartItems }) => {
   const [isLike, setIsLike] = useState(false);
@@ -56,7 +56,7 @@ const ItemCard = ({ index, contentItem, onEdit, onDelete, onAddToCart, onRemoveF
             <AiTwotoneEdit />
           </span>
           <span onClick={handleCartClick}>
-            {isAddedToCart ? <MdOutlineBookmarkAdded /> : <BiCartDownload />}
+            {isAddedToCart ? <MdBookmarkAdded /> : <BiCartDownload />}
           </span>
           <span onClick={handleLike} className={isLike ? styles.likeIcon : ""}>
             {isLike ? <IoHeartSharp /> : <IoHeartOutline />}

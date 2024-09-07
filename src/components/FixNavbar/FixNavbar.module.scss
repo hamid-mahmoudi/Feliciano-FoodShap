@@ -36,3 +36,21 @@
     }
   }
 }
+.bookTable {
+  position: relative;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  // padding: 0.2em 0.5em;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  right: -18%;
+  font-size: 0.8em;
+}

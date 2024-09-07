@@ -19,7 +19,7 @@ const BookTable = () => {
       ))}
       <div className={styles.total}>
         <span>
-          Total Price:<span>${totalPrice}</span>
+          Total Price:<span>${totalPrice.toFixed(2)}</span>
         </span>
       </div>
     </div>

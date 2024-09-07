@@ -49,12 +49,240 @@
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLn1eNROFGjJS5X9bWGcd18eNDRTC-2nvpmA&s"
     },
     {
-      "id": "58f8",
-      "name": "dsa",
-      "details": "das",
-      "price": "",
+      "id": "29e1",
+      "name": "Grilled Chicken Sandwich",
+      "details": "grilled chicken breast, lettuce, tomato, and mayo on a toasted bun",
+      "price": "7.99",
       "group_id": 2,
-      "image": ""
+      "image": "https://www.seriouseats.com/thmb/KYvB_jsWaJpfQVc_Q8aoHIe6axw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2017__07__20170622-grilled-chicken-sandwich-peruvian-29-5f5ee68545084d9ab49b61b70320212d.jpg"
+    },
+    {
+      "id": "29e2",
+      "name": "Caesar Salad",
+      "details": "romaine lettuce, croutons, parmesan cheese, and Caesar dressing",
+      "price": "6.49",
+      "group_id": 2,
+      "image": "https://itsavegworldafterall.com/wp-content/uploads/2023/04/Avocado-Caesar-Salad-FI.jpg"
+    },
+    {
+      "id": "29e3",
+      "name": "Turkey Club Sandwich",
+      "details": "turkey, bacon, lettuce, tomato, and mayo on toasted bread",
+      "price": "8.49",
+      "group_id": 2,
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9cqG--IyIsPeTgokz5h7_TdeA-4K0Yj6f4mRBwedJUCxtp2MWRrGMlF3K4HN5P7OPnY92o3nfbcyhAE8ODs7k0G-q02ZTGhD3F-pl2oyneXCASDgvXvQYAMPxcigw0YBIDPLG6sSh9obbZ2QM3725KxjSpXCd0IBjo_glpHfpUl0ICdZllh1e09bb/s3864/cover%20sandwich.JPG"
+    },
+    {
+      "id": "29e4",
+      "name": "Veggie Wrap",
+      "details": "mixed vegetables, hummus, and spinach in a whole wheat wrap",
+      "price": "6.99",
+      "group_id": 2,
+      "image": "https://cookingforpeanuts.com/wp-content/uploads/2023/09/veggie-wraps-high-protein-featured.jpg"
+    },
+    {
+      "id": "29e5",
+      "name": "Beef Burger",
+      "details": "beef patty, lettuce, tomato, onion, and pickles on a sesame seed bun",
+      "price": "7.49",
+      "group_id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnlUUDDBKqnuo6KyzWJvQerNfAwWKi3UVKw&s"
+    },
+    {
+      "id": "29e6",
+      "name": "Chicken Caesar Wrap",
+      "details": "grilled chicken, romaine lettuce, parmesan cheese, and Caesar dressing in a wrap",
+      "price": "7.99",
+      "group_id": 2,
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2024/04/Chicken-Caesar-Wrap_FT24_44899_0507_JR_09.jpg?fit=700%2C1024"
+    },{
+      "id": "30e1",
+      "name": "Grilled Salmon",
+      "details": "grilled salmon fillet served with lemon butter sauce and steamed vegetables",
+      "price": "14.99",
+      "group_id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwxL44alXtlUumLV26VRKjyVA-t6wZko_HqBM9PqCgEKGRWa6Peh4nKWN0o9Z3fCubeJc&usqp=CAU"
+    },
+    {
+      "id": "30e2",
+      "name": "Steak and Potatoes",
+      "details": "juicy steak served with garlic mashed potatoes and green beans",
+      "price": "18.99",
+      "group_id": 3,
+      "image": "https://rachaelsgoodeats.com/wp-content/uploads/2023/06/IMG_3163-scaled.jpg"
+    },
+    {
+      "id": "30e3",
+      "name": "Spaghetti Bolognese",
+      "details": "spaghetti pasta with a rich and savory Bolognese sauce",
+      "price": "12.99",
+      "group_id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmsI9KSuun4li9jmiy7vvLAvqwoceuZlo2ag&s"
+    },
+    {
+      "id": "30e4",
+      "name": "Chicken Alfredo",
+      "details": "fettuccine pasta with creamy Alfredo sauce and grilled chicken",
+      "price": "13.99",
+      "group_id": 3,
+      "image": "https://www.licious.in/blog/wp-content/uploads/2020/12/Penne-Alfredo.jpg"
+    },
+    {
+      "id": "30e5",
+      "name": "Vegetable Stir Fry",
+      "details": "mixed vegetables stir-fried with soy sauce and served with rice",
+      "price": "11.99",
+      "group_id": 3,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHGPRhSREA-H8Z5cEddsA94RDQUeAHl5UQ9g&s"
+    },
+    {
+      "id": "30e6",
+      "name": "Beef Tacos",
+      "details": "three beef tacos served with lettuce, cheese, and salsa",
+      "price": "10.99",
+      "group_id": 3,
+      "image": "https://embed.widencdn.net/img/beef/gcuz19twra/1120x840px/beef-steak-soft-tacos-horizontal.tif?keep=c&u=7fueml"
+    },{
+      "id": "31e1",
+      "name": "Coca-Cola",
+      "details": "classic Coca-Cola served chilled",
+      "price": "1.99",
+      "group_id": 4,
+      "image": "https://s.yimg.com/ny/api/res/1.2/dfso95r7vP1yT9qL.g10pg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/gobankingrates_644/2afc0ebc2a13c7132a21889e2bb0c0b9"
+    },
+    {
+      "id": "31e2",
+      "name": "Lemonade",
+      "details": "freshly squeezed lemonade",
+      "price": "2.49",
+      "group_id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZQ6Ysgv4yKj-iIVI7MbMuycHlU56sElHFQA&s"
+    },
+    {
+      "id": "31e3",
+      "name": "Iced Tea",
+      "details": "refreshing iced tea with a hint of lemon",
+      "price": "2.29",
+      "group_id": 4,
+      "image": "https://www.thespruceeats.com/thmb/jk3sZ3Jtq2WPnd31DrB-FR1qfs0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/summer-peach-tea-cocktail-recipe-761506-hero-01-f949acc1ed22404da03ce72648412bcf.jpg"
+    },
+    {
+      "id": "31e4",
+      "name": "Orange Juice",
+      "details": "freshly squeezed orange juice",
+      "price": "2.99",
+      "group_id": 4,
+      "image": "https://www.health.com/thmb/t65A3XAiGBu6D2CDU5EEbZZRqJY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/OrangeJuice-89d67c666c074a4eb6f9cd068c81d291.jpg"
+    },
+    {
+      "id": "31e5",
+      "name": "Coffee",
+      "details": "hot brewed coffee",
+      "price": "1.79",
+      "group_id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlvdSmBEsfeA-xFYUQtb-cXuehOQxNLZ6rcm77kJfEZfsxM33LI8ESgztx4QUjbvB_thM&usqp=CAU"
+    },
+    {
+      "id": "31e6",
+      "name": "Sparkling Water",
+      "details": "carbonated sparkling water",
+      "price": "1.99",
+      "group_id": 4,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfILD12yibD2iUxcvvsde-E_u8urx24xCc3Q_IyI6DrPlSMGUryS9md9_1fYm6iblzGas&usqp=CAU"
+    },{
+      "id": "32e1",
+      "name": "Chocolate Cake",
+      "details": "rich and moist chocolate cake with chocolate frosting",
+      "price": "4.99",
+      "group_id": 5,
+      "image": "https://www.brighteyedbaker.com/wp-content/uploads/2023/08/Chocolate-Fudge-Cake-Recipe.jpg"
+    },
+    {
+      "id": "32e2",
+      "name": "Cheesecake",
+      "details": "creamy cheesecake with a graham cracker crust",
+      "price": "5.49",
+      "group_id": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUVksDyLJS1jQts6tw4KMk8wbdfWMifSlllw&s"
+    },
+    {
+      "id": "32e3",
+      "name": "Apple Pie",
+      "details": "classic apple pie with a flaky crust",
+      "price": "3.99",
+      "group_id": 5,
+      "image": "https://joyfoodsunshine.com/wp-content/uploads/2019/08/best-apple-pie-recipe-from-scratch-8.jpg"
+    },
+    {
+      "id": "32e4",
+      "name": "Ice Cream Sundae",
+      "details": "vanilla ice cream topped with chocolate sauce, whipped cream, and a cherry",
+      "price": "4.49",
+      "group_id": 5,
+      "image": "https://foodhub.scene7.com/is/image/woolworthsltdprod/1712-candy-cane-ice-cream-sundaes:Mobile-1300x1150"
+    },
+    {
+      "id": "32e5",
+      "name": "Brownie",
+      "details": "fudgy chocolate brownie",
+      "price": "2.99",
+      "group_id": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOqEflBfXPO_OeKzgo9rsjFt_72z-NGTAa2A&s"
+    },
+    {
+      "id": "32e6",
+      "name": "Tiramisu",
+      "details": "classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese",
+      "price": "5.99",
+      "group_id": 5,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa247WWuIYhgvC6e3_GMs53OnhvchG2bbhsA&s"
+    },{
+      "id": "33e1",
+      "name": "Chardonnay",
+      "details": "a glass of crisp and refreshing Chardonnay",
+      "price": "6.99",
+      "group_id": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7qUAKWh6nCCzZiTeHQePGR6UZVhtVJtgsw&s"
+    },
+    {
+      "id": "33e2",
+      "name": "Merlot",
+      "details": "a glass of smooth and velvety Merlot",
+      "price": "7.49",
+      "group_id": 6,
+      "image": "https://www.laubenstein.de/wp-content/uploads/2019/04/605_1_merlot-trocken.jpg"
+    },
+    {
+      "id": "33e3",
+      "name": "Cabernet Sauvignon",
+      "details": "a glass of bold and full-bodied Cabernet Sauvignon",
+      "price": "7.99",
+      "group_id": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgE3UZj2d5fvkcq3ufpgRRiAjub2o0xNRm3g&s"
+    },
+    {
+      "id": "33e4",
+      "name": "Pinot Noir",
+      "details": "a glass of elegant and fruity Pinot Noir",
+      "price": "8.49",
+      "group_id": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR0rzBBqCXQTVPNGztD9soRuHIAh8DxYiWtg&s"
+    },
+    {
+      "id": "33e5",
+      "name": "Sauvignon Blanc",
+      "details": "a glass of crisp and aromatic Sauvignon Blanc",
+      "price": "6.49",
+      "group_id": 6,
+      "image": "https://vinobucks.de/shop/images/product_images/original_images/3215.jpg"
+    },
+    {
+      "id": "33e6",
+      "name": "Rosé",
+      "details": "a glass of refreshing and light Rosé",
+      "price": "6.99",
+      "group_id": 6,
+      "image": "https://www.bestwaywholesale.co.uk/img/products/1000/1/85000025871.jpg"
     }
   ],
   "groups": [

@@ -14,6 +14,9 @@
   &:hover .panel {
     transform: translateY(20%) !important;
   }
+  .bookTable {
+    position: relative;
+  }
   .price {
     position: absolute;
     right: 15%;
@@ -28,7 +31,7 @@
     // max-width: 36%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     position: relative;
     width: 50% !important;
     padding: 30px 30px 0 30px;
@@ -55,12 +58,16 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      width: 100%;
+      width: 95%;
+      margin: 0 7px;
       font-size: 21px;
       transform: translateY(91%);
       transition: $general-transition;
       background-color: $gray;
-      
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      backdrop-filter: blur(3px);
       span {
         color: $dark-gray;
         transition: $general-transition;

@@ -7,7 +7,7 @@ import Stories from "./pages/Stories/Stories";
 import Contact from "./pages/Contact/Contact";
 import Menu from "./pages/Menu/Menu";
 import Home from "./pages/Home/Home";
-import BookTable from "./pages/Basket/BookTable";
+import BookTable from "./pages/BookTable/BookTable";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 

@@ -12,8 +12,8 @@
   height: 230px;
   cursor: pointer;
   transition: $general-transition;
-  position: relative; // برای موقعیت‌دهی مطلق به آیکون
-  overflow: hidden; // برای جلوگیری از خروج تصویر از محدوده
+  position: relative;
+  overflow: hidden; 
 
   &:hover {
     background-color: darken($color: $white, $amount: 9);
@@ -37,7 +37,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5; // کمرنگ کردن تصویر
+    opacity: 0.5; 
   }
 
   .overlay {
@@ -49,13 +49,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.3); // پس‌زمینه تیره
-    z-index: 50; // لایه‌بندی زیر آیکون
-  }
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 50; }
 
   .icon {
     color: white;
     font-size: 2rem;
-    z-index: 100; // لایه‌بندی بالای پس‌زمینه تیره
+    z-index: 100; 
   }
 }
