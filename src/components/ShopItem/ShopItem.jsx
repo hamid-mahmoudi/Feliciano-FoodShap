@@ -50,11 +50,11 @@ const ShopItem = ({ item, onRemove }) => {
         <div className={styles.description}>
           <div>
             <h3>{item.name}</h3>
-            <p>{getGroups(item.group_id)}</p>
+            <p>&#40; {getGroups(item.group_id)} &#41;</p>
           </div>
           <p>golden-brown French toast served with syrup and powdered sugar</p>
         </div>
-        <span>{item.price} $</span>
+        <span>${item.price}</span>
         <span className={styles.icon} onClick={handleRemoveClick}><CiBookmarkRemove/></span>
       </div>
 

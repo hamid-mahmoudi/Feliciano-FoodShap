@@ -6,6 +6,8 @@
 .container {
   @include containerStyle;
   height: 70rem;
+  transition: $general-transition;
+
   .menuList {
     padding: 0;
     width: 100%;

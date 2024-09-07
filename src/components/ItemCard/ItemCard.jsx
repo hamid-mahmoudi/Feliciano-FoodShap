@@ -11,7 +11,6 @@ const ItemCard = ({ index, contentItem, onEdit, onDelete, onAddToCart, onRemoveF
   const isReverseContent = index % 4 === 2 || index % 4 === 3;
 
   useEffect(() => {
-    // Check if the item is already in the cart
     const isInCart = cartItems.some(cartItem => cartItem.id === contentItem.id);
     setIsAddedToCart(isInCart);
   }, [cartItems, contentItem.id]);
@@ -36,7 +35,7 @@ const ItemCard = ({ index, contentItem, onEdit, onDelete, onAddToCart, onRemoveF
     <li
       className={`${styles.contentItem} ${
         isReverseContent ? styles.reverseContent : ""
-      }`}
+      } ${isAddedToCart ? styles.addedToCart : ""}`}
     >
       <div className={styles.itemImage}>
         <img

@@ -152,16 +152,17 @@ const Menu = () => {
       }
       const { status } = await deleteItem(itemToDelete.id);
       if (status === 200) {
-        console.log("حذف موفقیت‌آمیز");
         setMenuItems(
           menuItems.filter((menuItem) => menuItem.id !== itemToDelete.id)
         );
         hideDeleteModalHandler();
         setForceRender(!forceRender);
+        console.log(status)
       }
     } catch (error) {
       console.log(error);
     }
+    
   };
   console.log(cartItems);
   return (
