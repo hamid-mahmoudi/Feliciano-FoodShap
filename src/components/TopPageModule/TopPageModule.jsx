@@ -24,9 +24,8 @@ const TopPageModule = () => {
     <div>
       <div className={`${styles.section} ${styles.section1}`}
               style={{ transform: scrolled ? "scale(1.02) " : "scale(1)",  filter: scrolled ? " grayscale(.5) " : " grayscale(0)" ,transition:"all 2s ease-in-out"}}
-
       ></div>
-      {pathName === "" ? (
+      {pathName === "HOME" ? (
         " "
       ) : (
         <div className={styles.pagination}>
@@ -36,7 +35,7 @@ const TopPageModule = () => {
           {location.pathname === "/" ? (
             ""
           ) : (
-            <p>
+            <p className={styles.path}>
               {pathName}
               <span>⟩</span>
             </p>

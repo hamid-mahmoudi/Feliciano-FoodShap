@@ -58,7 +58,6 @@ const App = () => {
         {showNavbar && <Navbar cartItems={cartItems} />}
         <FixNavbar cartItems={cartItems} />
         <Outlet context={{ cartItems, handleAddToCart, handleRemoveFromCart }} />
-        <Footer />
       </div>
     </div>
   );

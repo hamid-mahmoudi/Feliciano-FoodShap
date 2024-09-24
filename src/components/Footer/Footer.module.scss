@@ -2,18 +2,30 @@
 @import "../../styles/mixin.scss";
 .footer {
   background: $footer;
-//   width: 100%;
+  margin-top: 20rem;
+  height: 35vh;
   color: $white;
   display: flex;
   justify-content: space-between;
   z-index: 100 !important;
-  position: absolute;
-  bottom:  -50% !important;
-  left: 0;
-  right: 0;
   padding: 5rem 12rem;
+  z-index: 100;
+  @include respond-to(extralarge) {
+    padding: 5vw;
+  }
+  @include respond-to(large) {
+    flex-wrap: wrap;
+    height: fit-content;
+    
+  }
   >div{
     width: 20%;
+  @include respond-to(large) {
+  width: 50%
+  }
+  @include respond-to(medium) {
+    width: 100%
+    }
     p{
         @include paraphStyle;
         line-height: 1.7rem;

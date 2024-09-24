@@ -9,12 +9,12 @@ import {
   deleteItem,
 } from "../../services/service";
 import { RiLoaderFill } from "react-icons/ri";
-import { MdLibraryAdd } from "react-icons/md";
+import { MdLibraryAdd, MdOutlineManageSearch } from "react-icons/md";
 import Modal from "../../components/Modal/Modal";
 import Button from "../../components/Button/Button";
 import ImageUploader from "../../components/ImageUploader/ImageUploader";
 import { useOutletContext } from "react-router-dom";
-
+import Footer from "../../components/Footer/Footer";
 
 const Menu = () => {
   const [selectedGroup, setSelectedGroup] = useState(1);
@@ -34,7 +34,10 @@ const Menu = () => {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [itemToDelete, setItemToDelete] = useState(null);
   const { cartItems, handleAddToCart, handleRemoveFromCart } = useOutletContext();
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredItems, setFilteredItems] = useState([]);
+  const [showSearchInput, setShowSearchInput] = useState(false);
+  const [searchAllGroups, setSearchAllGroups] = useState(false);
 
   const showModal = () => {
     setShow(true);
@@ -75,7 +78,6 @@ const Menu = () => {
   };
 
   const hideDeleteModalHandler = () => {
-    // setItemToDelete(null);
     setShowDeleteModal(false);
     setIsLockScreen(false);
     document.body.classList.remove(styles.noScroll);
@@ -162,9 +164,42 @@ const Menu = () => {
     } catch (error) {
       console.log(error);
     }
-    
   };
-  console.log(cartItems);
+
+  const handleSearchChange = (e) => {
+    const term = e.target.value;
+    setSearchTerm(term);
+    if (term) {
+      const filtered = menuItems.filter((item) =>
+        item.name.toLowerCase().includes(term.toLowerCase())
+      );
+      if (searchAllGroups) {
+        setFilteredItems(filtered);
+      } else {
+        setFilteredItems(filtered.filter((item) => item.group_id === selectedGroup));
+      }
+    } else {
+      setFilteredItems([]);
+    }
+  };
+
+  const toggleSearchInput = () => {
+    if (showSearchInput) {
+      // Reset search term and filtered items when closing the search input
+      setSearchTerm("");
+      setFilteredItems([]);
+      setSearchAllGroups(false); // Uncheck the "Search in all items" checkbox
+    }
+    setShowSearchInput(!showSearchInput);
+  };
+
+  const handleCheckboxChange = () => {
+    setSearchAllGroups(!searchAllGroups);
+    setFilteredItems([]);
+    setSearchTerm("");
+  };
+
+
   return (
     <div>
       <div
@@ -173,6 +208,28 @@ const Menu = () => {
       >
         <div className={styles.addFood}>
           <MdLibraryAdd onClick={showModal} />
+        </div>
+        <div className={styles.searchFood}>
+          <MdOutlineManageSearch onClick={toggleSearchInput} />
+          {showSearchInput && (
+            <div className={styles.searchContainer}>
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={handleSearchChange}
+                placeholder="Search for food..."
+                className={styles.searchInput}
+              />
+              <label>
+                <input
+                  type="checkbox"
+                  checked={searchAllGroups}
+                  onChange={handleCheckboxChange}
+                />
+                Search in all items
+              </label>
+            </div>
+          )}
         </div>
         <h3 className={styles.menuTitle}>Specialties</h3>
         {isLoad ? (
@@ -192,30 +249,24 @@ const Menu = () => {
                 </li>
               ))}
             </ul>
-            {menuItems.length > 0 && (
-              <div className={styles.content}>
-                <ul>
-                  {menuItems
-                    .filter(
-                      (contentItem) => contentItem.group_id === selectedGroup
-                    )
-                    .map((contentItem, index) => (
-                      <ItemCard
-                        index={index}
-                        key={contentItem.id}
-                        contentItem={contentItem}
-                        onDelete={() => showDeleteModalHandler(contentItem)}
-                        onEdit={() => showEditModalHandler(contentItem)}
-                        onAddToCart={() => handleAddToCart(contentItem)}
-                        onRemoveFromCart={() =>
-                          handleRemoveFromCart(contentItem)
-                        }
-                        cartItems={cartItems}
-                      />
-                    ))}
-                </ul>
-              </div>
-            )}
+            <div className={styles.content}>
+              <ul>
+                {(searchTerm ? filteredItems : menuItems)
+                  .filter((contentItem) => searchAllGroups || contentItem.group_id === selectedGroup)
+                  .map((contentItem, index) => (
+                    <ItemCard
+                      index={index}
+                      key={contentItem.id}
+                      contentItem={contentItem}
+                      onDelete={() => showDeleteModalHandler(contentItem)}
+                      onEdit={() => showEditModalHandler(contentItem)}
+                      onAddToCart={() => handleAddToCart(contentItem)}
+                      onRemoveFromCart={() => handleRemoveFromCart(contentItem)}
+                      cartItems={cartItems}
+                    />
+                  ))}
+              </ul>
+            </div>
           </>
         )}
       </div>
@@ -329,6 +380,7 @@ const Menu = () => {
           </div>
         </div>
       </Modal>
+      <Footer />
     </div>
   );
 };

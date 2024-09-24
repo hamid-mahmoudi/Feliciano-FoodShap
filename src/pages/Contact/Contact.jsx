@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./Contact.module.scss";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 const Contact = () => {
   return (
+    <div>
     <div className={styles.container}>
       <h3 className={styles.menuTitle}>Contact</h3>
       <div className={styles.form}>
@@ -49,6 +51,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

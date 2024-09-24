@@ -1,45 +1,67 @@
 @import "./variables.scss";
 @mixin containerStyle {
-    padding: 5rem 12rem;
-    width: auto;
-    background-color: $white;
-    top: 50vh;
-    position: relative;
+  padding: 5rem 12rem;
+  width: auto;
+  background-color: $white;
+  top: 50vh;
+  position: relative;
+}
+@mixin menuTitleStyle {
+  text-align: center;
+  font-size: 52px !important;
+  font-weight: 900;
+  position: absolute;
+  top: -28vh;
+  left: 50%;
+  transform: translatex(-50%);
+  color: $white;
+}
+@mixin paraphStyle {
+  color: $text;
+  line-height: 2rem;
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+@mixin textStyle($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+@mixin reSet {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin setTitle {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 900;
+}
+@mixin inputStyle {
+  outline: none;
+  border: 1px solid gainsboro;
+  padding: 17px;
+  font-size: 16px;
+}
+$breakpoint-small: 600px;
+$breakpoint-medium: 890px;
+$breakpoint-large: 1000px;
+$breakpoint-extralarge: 1250px;
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $breakpoint == medium {
+    @media (max-width: $breakpoint-medium) {
+      @content;
+    }
+  }  @else if $breakpoint == large {
+    @media (max-width: $breakpoint-large) {
+      @content;
+    }
+  } @else if $breakpoint == extralarge {
+    @media (max-width: $breakpoint-extralarge) {
+      @content;
+    }
   }
-  @mixin menuTitleStyle {
-    text-align: center;
-    font-size: 52px !important;
-    font-weight: 900;
-    position: absolute;
-    top: -28vh;
-    left: 50%;
-    transform: translatex(-50%);
-    color: $white;
-  }
-  @mixin paraphStyle{
-    color: $text;
-    line-height: 2rem;
-    font-weight: 450;
-    font-size: 1.2rem;
-  }
-  @mixin textStyle($size,$weight) {
-    font-size: $size;
-    font-weight: $weight;
-
-  }
-  @mixin reSet{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  @mixin setTitle{
-    text-align: center;
-    font-size: 52px;
-    font-weight: 900;
-  }
-  @mixin inputStyle{
-    outline: none;
-    border: 1px solid gainsboro;
-    padding: 17px;
-    font-size: 16px;
-  }
+}

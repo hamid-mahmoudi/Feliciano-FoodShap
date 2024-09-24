@@ -1,4 +1,5 @@
 @import "../../../src/styles/variables.scss";
+@import "../../../src/styles/mixin.scss";
 .contentItem {
   box-sizing: border-box;
   width: 48%;
@@ -12,14 +13,15 @@
   min-height: 224px;
   max-height: 230px;
   transition: $general-transition;
-
+  @include respond-to(medium) {
+  width: 100%;
+  }
   &:hover .panel {
     transform: translateY(20%) !important;
   }
   .bookTable {
     position: relative;
   }
-
   .price {
     position: absolute;
     right: 15%;
@@ -29,12 +31,15 @@
     font-weight: 500;
     color: $orange-pink;
     font-family: sans-serif;
+    filter: drop-shadow(0 0 1px $white  );
+    @include respond-to(extralarge) {
+      position: static;
+    }
   }
   .description {
     // max-width: 36%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     position: relative;
     width: 50% !important;
     padding: 30px 30px 0 30px;
@@ -44,12 +49,24 @@
       rgba(217, 195, 165, 0.555) 0%,
       rgba(255, 255, 255, 0.6139705882352942) 99%
     );
+    p{
+      color: $light-gray;
+      font-size: 1rem;
+      @include respond-to(extralarge) {
+        padding: 0;
+        margin: 0;
+      }
+    }
     h4 {
       font-size: 26px;
       margin: 0;
       padding: 0;
       font-weight: 700;
       width: 70%;
+      @include respond-to(extralarge) {
+        width: 100%;
+        font-size: 23px;
+      }
     }
     .panel {
       box-sizing: border-box;
@@ -75,7 +92,7 @@
         color: $dark-gray;
         transition: $general-transition;
         cursor: pointer;
-        &:hover{
+        &:hover {
           scale: 1.3;
           filter: drop-shadow(0 2px 3px $light-gray);
           color: $black;
@@ -88,7 +105,7 @@
   }
   .itemImage {
     width: 63%;
-    
+
     img {
       width: 100%;
       height: 100%;
@@ -131,5 +148,5 @@
   transform: scale(1.015);
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.198);
   z-index: 1;
-border: 2px solid rgba(255, 0, 0, 0.672);  
+  border: 2px solid rgba(255, 0, 0, 0.672);
 }

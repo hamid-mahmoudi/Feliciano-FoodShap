@@ -1,7 +1,9 @@
 @import "../../styles/variables.scss";
+@import "../../styles/mixin.scss";
 .section {
   width: 100%;
   transition: transform 0.3s ease-in-out;
+
 }
 
 .section1 {
@@ -26,10 +28,16 @@
     justify-content: center;
     gap: 10%;
     text-wrap: nowrap;
+    @include respond-to(extralarge) {
+      top: 52vh;
+    }
     span{
         margin-left: 3px;
       }
       a{
         color: $white;text-decoration: none;
     }
+}
+.path{
+  color: $light-gray;
 }

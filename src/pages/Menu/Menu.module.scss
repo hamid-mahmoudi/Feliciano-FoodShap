@@ -5,9 +5,10 @@
 }
 .container {
   @include containerStyle;
-  height: 70rem;
   transition: $general-transition;
-
+  @include respond-to(extralarge) {
+    padding: 5vw;
+  }
   .menuList {
     padding: 0;
     width: 100%;
@@ -15,6 +16,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    @include respond-to(medium) {
+      flex-wrap: wrap;
+      gap: 0;
+    }
     li {
       display: flex;
       align-items: center;
@@ -26,6 +31,10 @@
       width: 16.6667% !important;
       cursor: pointer;
       transition: $general-transition;
+      @include respond-to(medium) {
+        width: 22% !important;
+        padding: 15px 30px;
+      }
       &:hover {
         background-color: darken($color: $orange-pink, $amount: 7);
         color: darken($color: $white, $amount: 7);
@@ -81,11 +90,64 @@
   transition: $general-transition;
   animation: pup 3s infinite;
   box-sizing: border-box;
+  z-index: 1000;
   &:hover {
     background-color: darken($color: $orange-pink, $amount: 5);
     color: rgb(225, 225, 225);
   }
 }
+.searchFood {
+  position: fixed;
+  left: 5%;
+  bottom: 20%;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: $orange-pink;
+  border-radius: 50%;
+  padding: 5px 7px 0;
+  color: $white;
+  box-shadow: 0 3px 5px $dark-gray;
+  transition: $general-transition;
+  animation: pup 3s infinite;
+  box-sizing: border-box;
+  z-index: 100;
+  &:hover,
+  & .searchContainer:hover {
+    background-color: darken($color: $orange-pink, $amount: 5);
+    color: rgb(225, 225, 225);
+  }
+}
+.searchContainer {
+  z-index: -999;
+  position: absolute;
+  margin-left: 10px;
+  padding: 3px;
+  font-size: 1rem;
+  border-radius: 4px;
+  top: 50%;
+
+  transform: translatey(-50%);
+  // left: 80%;
+  background-color: $orange-pink;
+  padding-left: 3rem;
+  border: none;
+  label {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  input {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    &::placeholder {
+      font-size: 10px;
+    }
+  }
+}
+
 @keyframes pup {
   0% {
     transform: scale(1);
@@ -174,13 +236,11 @@
       padding: 10px 20px;
     }
     :nth-child(2) {
-      button{
-
+      button {
         border: 1px solid $orange-pink;
         color: $orange-pink;
         background-color: $white;
-        &:hover{
-
+        &:hover {
           background-color: darken($color: $white, $amount: 10);
         }
       }

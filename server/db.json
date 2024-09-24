@@ -95,7 +95,8 @@
       "price": "7.99",
       "group_id": 2,
       "image": "https://www.tasteofhome.com/wp-content/uploads/2024/04/Chicken-Caesar-Wrap_FT24_44899_0507_JR_09.jpg?fit=700%2C1024"
-    },{
+    },
+    {
       "id": "30e1",
       "name": "Grilled Salmon",
       "details": "grilled salmon fillet served with lemon butter sauce and steamed vegetables",
@@ -142,7 +143,8 @@
       "price": "10.99",
       "group_id": 3,
       "image": "https://embed.widencdn.net/img/beef/gcuz19twra/1120x840px/beef-steak-soft-tacos-horizontal.tif?keep=c&u=7fueml"
-    },{
+    },
+    {
       "id": "31e1",
       "name": "Coca-Cola",
       "details": "classic Coca-Cola served chilled",
@@ -189,7 +191,8 @@
       "price": "1.99",
       "group_id": 4,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfILD12yibD2iUxcvvsde-E_u8urx24xCc3Q_IyI6DrPlSMGUryS9md9_1fYm6iblzGas&usqp=CAU"
-    },{
+    },
+    {
       "id": "32e1",
       "name": "Chocolate Cake",
       "details": "rich and moist chocolate cake with chocolate frosting",
@@ -236,7 +239,8 @@
       "price": "5.99",
       "group_id": 5,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa247WWuIYhgvC6e3_GMs53OnhvchG2bbhsA&s"
-    },{
+    },
+    {
       "id": "33e1",
       "name": "Chardonnay",
       "details": "a glass of crisp and refreshing Chardonnay",

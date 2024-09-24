@@ -1,15 +1,31 @@
 @import "../../styles/mixin.scss";
 @import "../../styles/variables.scss";
 .menuTitle {
-    @include menuTitleStyle;
-    
+  @include menuTitleStyle;
+  span {
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 1px $white);
   }
+}
 .container {
   @include containerStyle;
   .presentRestaurant {
     display: flex;
     height: 100%;
+    @include respond-to(extralarge) {
+      flex-direction: column;
+    }
     .frame {
+      @include respond-to(extralarge) {
+        margin: auto;
+      }
+      @include respond-to(large) {
+        gap:0;
+        div {
+          width: 30vw !important;
+          transform: translateY(0) !important;
+        }
+      }
       display: flex;
       gap: 18px;
       :nth-child(2) {
@@ -81,6 +97,60 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+    }
+  }
+  .counterSec {
+    width: 100%;
+    display: flex;
+    padding: 5rem 0;
+    > :last-child {
+      font-size: 1.2rem !important;
+      text-transform: capitalize;
+    }
+    div {
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      color: $light-gray;
+      span {
+        color: $orange-pink;
+        text-align: left;
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+    }
+  }
+  .services {
+    padding: 5rem 0;
+    h3 {
+      @include setTitle;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    > div {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      div {
+        width: 30%;
+        span {
+          font-size: 4rem;
+          color: $orange-pink;
+        }
+        h4 {
+          font-size: 2rem;
+          font-weight: 400;
+          margin-top: 0;
+        }
+        p {
+          color: $light-gray;
+          margin-top: 0;
+        }
+      }
     }
   }
 }

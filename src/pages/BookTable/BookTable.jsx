@@ -2,6 +2,7 @@ import React from "react";
 import { useOutletContext } from "react-router-dom";
 import styles from "./BookTable.module.scss";
 import ShopItem from "../../components/ShopItem/ShopItem";
+import Footer from "../../components/Footer/Footer";
 
 const BookTable = () => {
   const { cartItems, handleRemoveFromCart } = useOutletContext();
@@ -12,6 +13,7 @@ const BookTable = () => {
   );
 
   return (
+    <div>
     <div className={styles.container}>
       <h3 className={styles.menuTitle}>Order Basket</h3>
       {cartItems.map((item) => (
@@ -22,6 +24,8 @@ const BookTable = () => {
           Total Price:<span>${totalPrice.toFixed(2)}</span>
         </span>
       </div>
+      </div>
+      <Footer/>
     </div>
   );
 };

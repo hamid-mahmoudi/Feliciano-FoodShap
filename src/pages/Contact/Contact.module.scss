@@ -4,7 +4,7 @@
   @include menuTitleStyle;
 }
 .container {
-  height: 130vh !important;
+  // height: 130vh !important;
   @include containerStyle;
   display: flex;
   flex-direction: column;

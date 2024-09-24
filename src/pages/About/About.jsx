@@ -3,6 +3,7 @@ import styles from "./About.module.scss";
 import ChefCard from "../../components/ChefCard/ChefCard";
 import { getChefCards } from "../../services/service";
 import { BsPlusCircleDotted } from "react-icons/bs";
+import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   const [chefCard, setChefCard] = useState([]);
@@ -15,6 +16,7 @@ const About = () => {
     fetchData();
   }, []);
   return (
+    <div>
     <div className={styles.container}>
       <h3 className={styles.menuTitle}>About</h3>
       <section className={styles.presentRestaurant}>
@@ -47,6 +49,8 @@ const About = () => {
           </div>
         </div>
       </section>
+      </div>
+      <Footer/>
     </div>
   );
 };
